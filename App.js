@@ -4,6 +4,7 @@ import Constants from 'expo-constants';
 
 // You can import from local files
 import Header from './components/Header';
+import StartGameScreen from './screens/StartGameScreen';
 
 // or any pure javascript modules available in npm
 import { Card } from 'react-native-paper';
@@ -11,7 +12,8 @@ import { Card } from 'react-native-paper';
 export default function App() {
   return (
     <View style={styles.screen}>
-      <AssetExample title="Braniac" />
+      <Header title="Braniac" />
+      <StartGameScreen />
     </View>
   );
 }
